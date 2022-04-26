@@ -37,3 +37,20 @@ await areq("hello")
 
 ![image-20220426174613666](README.assets/image-20220426174613666.png)
 
+
+
+
+
+# 参考文档
+
+- Go WebAssembly (Wasm) 简明教程
+
+  https://geektutu.com/post/quick-go-wasm.html
+
+- Go-WebAssembly
+
+  https://github.com/golang/go/wiki/WebAssembly#webassembly
+
+- syscall/js
+
+  https://pkg.go.dev/syscall/js

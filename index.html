@@ -1,0 +1,20 @@
+<html>
+<script src="wasm_exec_go.js"></script>
+<script>
+	window.gowasm = {}
+
+	const go = new Go();
+	WebAssembly.instantiateStreaming(fetch("test.wasm"), go.importObject)
+		.then((result) => go.run(result.instance));
+</script>
+
+<script>
+	// 使用 promise 封装, 支持 await
+	function areq(args) {
+		return new Promise((resolve, reject) => {
+			req(args, resolve, reject)
+		})
+	} 
+</script>
+
+</html>
